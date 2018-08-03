@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-auth.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCT7xDyOTmfxMZxGLkFWsqrNApMUNrm2UM",
+        authDomain: "class-prep.firebaseapp.com",
+        databaseURL: "https://class-prep.firebaseio.com",
+        projectId: "class-prep",
+        storageBucket: "class-prep.appspot.com",
+        messagingSenderId: "829209543624"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Cadastro</legend>
+        <label>Email</label>
+        <input type="text" class="sign-up-email" />
+        <label>Senha</label>
+        <input type="password" class="sign-up-password" />
+      </fieldset>
+      <button class="sign-up-button">Cadastro</button>
+    </form>
+
+    <form>
+      <fieldset>
+        <legend>Entrar</legend>
+        <label>Email</label>
+        <input type="text" class="sign-in-email" />
+        <label>Senha</label>
+        <input type="password" class="sign-in-password" />
+      </fieldset>
+      <button class="sign-in-button">Entrar</button>
+    </form>
+
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

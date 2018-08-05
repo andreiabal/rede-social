@@ -29,12 +29,12 @@ function renderTasksList(snapshot) {
 function createTaskItem(text, key) {
   $(".task-list").append(`
     <li>
-      <input class="tasks-checkbox" type="checkbox" data-id=${key}/>
+      <input class="tasks-checkbox" type="checkbox" data-id=${key} />
       ${text}
     </li>`
   );
 
-  $(`input[data-id='${key}/']`).click(function() {
+  $(`input[data-id='${key}']`).click(function() {
     var listItem = $(this).parent();
     deleteTask(listItem, key);
   });

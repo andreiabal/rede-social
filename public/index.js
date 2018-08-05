@@ -30,7 +30,6 @@ function createUser(name, email, password) {
     if(response.operationType === "signIn") {
       var userId = response.user.uid;
 
-      clearInputs("sign-up");
       createUserInDB(userId, name, email);
       signInRedirect(userId);
     }
@@ -43,18 +42,11 @@ function loginUserAuth(email, password) {
   .then(function(response) {
     if(response.operationType === "signIn") {
       var userId = response.user.uid;
-
-      clearInputs("sign-in");
+      
       signInRedirect(userId);
     }
   })
   .catch(function(error) { handleError(error); });
-}
-
-function clearInputs(inputPrefix) {
-  $(`.${inputPrefix}-email`).val("");
-  $(`.${inputPrefix}-password`).val("");
-  (inputPrefix === "sign-up") ? $(`.${inputPrefix}-name`).val("") : null;
 }
 
 function createUserInDB(id, name, email) {

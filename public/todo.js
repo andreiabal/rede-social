@@ -58,6 +58,7 @@ function addTasks(event) {
   if (!isTextEmpty) {
     var newTask = addTaskToDB(taskText);
     var taskId = newTask.getKey();
+
     createTaskItem(taskText, taskId);
   }
 

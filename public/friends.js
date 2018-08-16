@@ -35,7 +35,7 @@ function createUserItem(text, key) {
   $('#friends-list').prepend(`
     <li class="user" data-id=${key}>
       <span class="text"> ${text} </span>
-
+      <button class="friends-button" data-user-id="${key}">seguir</button>
       <div class="user-actions">
       </div>
     </li>`

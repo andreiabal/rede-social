@@ -4,7 +4,8 @@ body {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 75px;
+  font-family: 'Fredericka the Great', cursive;
 }
 
 ul {
@@ -25,6 +26,15 @@ ul {
 .posts {
   margin: 0 auto;
   margin-bottom: 20px;
+}
+
+#style-text {
+  font-size: 15px;
+  color: #CD5C5C;
+  height: auto;
+  font-weight: bold;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .post-actions {
@@ -91,11 +101,3 @@ label {
   padding-top: 5px;
 }
 
-#style-text {
-  font-size: 15px;
-  color: #CD5C5C;
-  height: auto;
-  font-weight: bold;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}

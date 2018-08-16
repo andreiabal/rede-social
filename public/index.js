@@ -57,7 +57,7 @@ function createUserInDB(id, name, email) {
 }
 
 function signInRedirect(userId) {
-  window.location = "todo.html?userId=" + userId;
+  window.location = "app.html?userId=" + userId;
 }
 
 function handleError(error) {

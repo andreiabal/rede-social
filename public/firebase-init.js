@@ -1,10 +1,11 @@
+// Initialize Firebase
 var config = {
-  apiKey: "AIzaSyCT7xDyOTmfxMZxGLkFWsqrNApMUNrm2UM",
-  authDomain: "class-prep.firebaseapp.com",
-  databaseURL: "https://class-prep.firebaseio.com",
-  projectId: "class-prep",
-  storageBucket: "class-prep.appspot.com",
-  messagingSenderId: "829209543624"
+  apiKey: "AIzaSyA88j-voVChQbl2UjX9-QLZ4uVEpmmkhqo",
+  authDomain: "haikids-9a31c.firebaseapp.com",
+  databaseURL: "https://haikids-9a31c.firebaseio.com",
+  projectId: "haikids-9a31c",
+  storageBucket: "haikids-9a31c.appspot.com",
+  messagingSenderId: "906587068289"
 };
 
 firebase.initializeApp(config);
